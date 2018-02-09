@@ -47,12 +47,15 @@ class insertion1
 			  i=j-1;
 			  while(i>0 && a[i]>key)
 			  {
-			     a[i+1]=a[i];
+			     //a[i+1]=a[i];
+				 int temp=a[i];
+				 a[i]=a[i+1];
+				 a[i+1]=temp;
 				 i=i-1;
 			  }
 			  a[i+1]=key;
 		  }
-		  System.out.println("noe the sorted array are");
+		  System.out.println("now the sorted array are");
 		  for(i=1;i<=n;i++)
 		  {
 		     System.out.print(a[i]+"   ");
