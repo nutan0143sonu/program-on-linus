@@ -13,6 +13,7 @@ class Girl
 			  }
 			  for(int i=0;i<len-1;i++)
 			  {
+              int occur=0;
 			        for(int j=i+1;j<len;j++)
 					{
 					      if(data[i]==data[j])
@@ -21,9 +22,17 @@ class Girl
 								 String newString=new String(data);
 						          list.add(newString);
 								 System.out.println(newString);
+                    occur=occur+1;
+                 break;
+                 
 								 
 						  }
+              
 					}
+          if(occur==1)
+          {
+              break;
+          }
 			  }
 			  return list;
 	  }
