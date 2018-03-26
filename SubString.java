@@ -13,7 +13,7 @@ class Girl
 			  }
 			  for(int i=0;i<len-1;i++)
 			  {
-              int occur=0;
+              int occur=1;
 			        for(int j=i+1;j<len;j++)
 					{
 					      if(data[i]==data[j])
@@ -29,7 +29,7 @@ class Girl
 						  }
               
 					}
-          if(occur==1)
+          if(occur==2)
           {
               break;
           }
