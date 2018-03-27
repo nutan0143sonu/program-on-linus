@@ -6,11 +6,18 @@ class Girl
 	  {
 	         List<String> list=new ArrayList<String>(); 
 			 char data[]=new char[len];
-	           
+                  
 	          for(int i=0;i<len;i++)
 			  {
 			       data[i]=TestString.charAt(i);
 			  }
+         if(len==1)
+       {
+            String newString=new String(data);
+						          list.add(newString);
+								 System.out.println(newString);
+       }
+	    else{
         int occur=0;
 			  for(int i=0;i<len-1;i++)
 			  {
@@ -31,9 +38,10 @@ class Girl
         }
         else
         {
-               String newString=new String(data);
-						          list.add(newString);
-								 System.out.println(newString);
+               String newString1=new String(data);
+						          list.add(newString1);
+								 System.out.println(newString1);
+        }
         }
 			  return list;
 	  }
